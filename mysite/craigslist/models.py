@@ -25,7 +25,7 @@ class City(models.Model):
 
 
 class Category(models.Model):
-    category = models.CharField(max_length=21)
+    category = models.CharField(max_length=30)
 
     def __repr__(self):
         return "{}".format(self.category.upper())
@@ -35,7 +35,7 @@ class Category(models.Model):
 
 
 class SubCategory(models.Model):
-    sub_category = models.CharField(max_length=21)
+    sub_category = models.CharField(max_length=30)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
     def __repr__(self):
