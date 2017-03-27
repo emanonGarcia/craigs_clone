@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>craigslist > sites</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    {% load static %}
+
+<div class="container">
+  <header>
+     <div id="logo">craigslist<sup>®</sup></div>
+  </header>
+  <div class="row">
+
+    <div class="col">
+      <nav>
+          <a href="#">US</a>
+          <a href="#">Canada</a>
+          <a href="#">Europe</a></li>
+          <a href="#">Asia/Pacific/Middle East</a>
+          <a href="#">Oceania</a>
+          <a href="#">Latin America</a>
+          <a href="#">Africa</a>
+      </nav>
+    </div>
+    <div class="col-xl-12">
+
+      <img src="{% static "craigslist/banner.jpg" %}" alt="My image"/>
+    </div>
+  </div>
+  <h1><a>US</a></h1>
+  <div class="row">
+    <div class="col">
+    {% for state in states %}
+    <h4>{{state}}<h4>
+      {% for city in state.city_set.all %}
+        <ul>
+          <li><a>{{city.city}}</a></li>
+        </ul>
+      {% endfor %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<footer>
+  <ul>
+    <li><a>© craigslist</a></li>
+    <li><a>help</a></li>
+    <li><a>safety</a></li>
+    <li><a>privacy</a></li>
+    <li><a>feedback</a></li>
+    <li><a>cl jobs</a></li>
+    <li><a>terms</a></li>
+    <li><a>about</a></li>
+    <li><a>mobile</a></li>
+  </ul>
+</footer>
+  </body>
+</html>
