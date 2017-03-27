@@ -1,9 +1,12 @@
 # Craigslist Clone
 
-This is a simple clone of Craigslist using Django, and Bootstraps. Though on a much smaller scale this application showcases the core functionality of the full scale the American classified advertisements website.
+This is a simple clone of Craigslist using Django, and Bootstraps. Though on a much smaller scale this application showcases the core functionality of the full scale American classified advertisements website.
 
 
 ### Prerequisites
+
+* [PostgreSQL](https://www.postgresql.org/download/) - An open source object-relational database system
+* [Postico](https://eggerapps.at/postico/) - A Modern PostgreSQL Client for OSX
 
 Python3
 
@@ -54,8 +57,6 @@ and navigate to [Home Page](http://localhost:8000/craigslist/)
 
 * [Django](https://www.djangoproject.com/) - The web framework used
 * [Bootsrap](http://getbootstrap.com/) - Front-end web framework for designing websites
-* [PostgreSQL](https://www.postgresql.org/download/) - An open source object-relational database system
-* [Postico](https://eggerapps.at/postico/) - A Modern PostgreSQL Client for OSX
 
 
 ## Authors
